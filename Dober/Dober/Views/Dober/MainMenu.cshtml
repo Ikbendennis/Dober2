@@ -1,0 +1,10 @@
+﻿@model Dober.Models.GebruikerModel
+@{
+    ViewData["Title"] = "MainMenu";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+@using (Html.BeginForm("Subscribe", "Dober", FormMethod.Post))
+{
+
+<h2>@Model.Emailadres</h2>
+}

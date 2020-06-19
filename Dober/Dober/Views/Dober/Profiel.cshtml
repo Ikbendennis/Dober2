@@ -1,0 +1,185 @@
+﻿@model Dober.Models.GebruikerModel
+@{
+    ViewData["Title"] = "Profiel";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h3>@Model.Naam</h3>
+<div class="container" id="AccountGegevens">
+    <h3>Accountgegevens</h3>
+    <div class="row">
+        <div class="col-2">
+            <label>Naam</label>
+        </div>
+        <div class="col-2">
+            @Html.Label(Model.Naam)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Emailadres</label>
+        </div>
+        <div class="col-2">
+            @Html.Label(Model.Emailadres)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Telefoonnummer</label>
+        </div>
+        <div class="col-2">
+            @Html.Label(Model.Telefoonnummer)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Adresgegegevens</label>
+        </div>
+        <div class="col-3">
+            @Html.Label(Model.Adresgegevens)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Geslacht</label>
+        </div>
+        <div class="col-2">
+            @Html.Label(Model.Geslacht.ToString())
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Accounttype</label>
+        </div>
+        <div class="col-2">
+            @Html.Label(Model.Accounttype)
+        </div>
+    </div>
+    <input type="button" value="Wijzigen" />
+</div>
+<br />
+<br />
+
+<div class="container" id="Honden">
+    <h3>Honden</h3>
+    <!--Foreach-->
+    <div class="row">
+        <div class="col-2">
+            <label>Naam</label>
+        </div>
+        <div class="col-2">
+            <label>Rex</label>
+        </div>
+        <div class=" col-1">
+
+        </div>
+        <div class="col-2">
+            <label>Naam</label>
+        </div>
+        <div class="col-2">
+            <label>Lady</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Leeftijd</label>
+        </div>
+        <div class="col-2">
+            <label>2</label>
+        </div>
+        <div class=" col-1">
+
+        </div>
+        <div class="col-2">
+            <label>Leeftijd</label>
+        </div>
+        <div class="col-2">
+            <label>13</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Gewicht</label>
+        </div>
+        <div class="col-2">
+            <label>60 kg</label>
+        </div>
+        <div class=" col-1">
+
+        </div>
+        <div class="col-2">
+            <label>Gewicht</label>
+        </div>
+        <div class="col-2">
+            <label>48</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Formaat</label>
+        </div>
+        <div class="col-2">
+            Groot
+        </div>
+        <div class=" col-1">
+
+        </div>
+        <div class="col-2">
+            <label>Formaat</label>
+        </div>
+        <div class="col-2">
+            <label>MiddelGroot</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Geslacht</label>
+        </div>
+        <div class="col-2">
+            <label>Reu</label>
+        </div>
+        <div class=" col-1">
+
+        </div>
+        <div class="col-2">
+            <label>Geslacht</label>
+        </div>
+        <div class="col-2">
+            <label>Teef</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Speciale eisen</label>
+        </div>
+        <div class="col-2">
+            <label>Geen</label>
+        </div>
+        <div class=" col-1">
+
+        </div>
+        <div class="col-2">
+            <label>Speciale eisen</label>
+        </div>
+        <div class="col-2">
+            <label>Zwakke achterpoot</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <label>Score</label>
+        </div>
+        <div class="col-2">
+            <label>9/10</label>
+        </div>
+        <div class=" col-1">
+
+        </div>
+        <div class="col-2">
+            <label>Score</label>
+        </div>
+        <div class="col-2">
+            <label>9/10</label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,133 @@
+﻿@model Dober.Models.GebruikerModel
+@{
+    ViewData["Title"] = "Verzoeken";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<!--if accounttype = gebruiker (Foreach * in oppas where beschikbaarheid = true)
+    if accounttype = oppas (foreach * in verzoeken where oppasid = own id)
+-->
+
+<h3>@Model.Emailadres</h3>
+<div class="row">
+    <div class="col-10">
+        <h3>Beschikbare oppassen</h3>
+    </div>
+    <div class="col-2">
+        <input type="button" value="Bekijk Verzoeken" onclick="location.href='@Url.Action("Verzoeken2", "Dober")'" />
+    </div>
+</div>
+<div class="container" id="kolom1">
+    <div class="row">
+        <div class="col-2">
+            Naam:
+        </div>
+        <div class="col-2">
+            Jan Jansen
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            Adres:
+        </div>
+        <div class="col-2">
+            Klaverstraat 4 Tilburg 8384KG
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            Capaciteit:
+        </div>
+        <div class="col-2">
+            3 Honden
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            Score:
+        </div>
+        <div class="col-2">
+            8.5/10
+        </div>
+        <div class="col">
+            <input type="button" value="Stuur Verzoek" />
+        </div>
+    </div>
+</div>
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            Naam:
+        </div>
+        <div class="col-2">
+            Klaas Klassen
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            Adres:
+        </div>
+        <div class="col-2">
+            Hoofdstraat 29 Breda 7472HQ
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            Capaciteit:
+        </div>
+        <div class="col-2">
+            1 Hond
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            Score:
+        </div>
+        <div class="col-2">
+            10/10
+        </div>
+        <div class="col">
+            <input type="button" value="Stuur Verzoek" />
+        </div>
+    </div>
+</div>
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            Naam:
+        </div>
+        <div class="col-2">
+            Peter Peters
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            Adres:
+        </div>
+        <div class="col-2">
+            Stationsstraat 123 Eindhoven 6378LT
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            Capaciteit:
+        </div>
+        <div class="col-2">
+            7 Honden
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            Score:
+        </div>
+        <div class="col-2">
+            5/10
+        </div>
+        <div class="col">
+            <input type="button" value="Stuur Verzoek" />
+        </div>
+    </div>
+</div>
+

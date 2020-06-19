@@ -1,0 +1,74 @@
+﻿@model Dober.Models.RegistratieModel
+
+@{
+    ViewData["Title"] = "Registreren";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Registreren</h1>
+@using (Html.BeginForm("RegistreerClick", "Dober", FormMethod.Post))
+{  <div class="container" id="Registreren">
+        <div class="row">
+            <div class="col-2">
+                <label>Naam</label>
+            </div>
+            <div class="col-2">
+                @Html.TextBoxFor(model => model.Naam)
+                @Html.ValidationMessageFor(model => model.Naam)
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-2">
+                <label>Email</label>
+            </div>
+            <div class="col-2">
+                @Html.TextBoxFor(model => model.Emailadres)
+                @Html.ValidationMessageFor(model => model.Emailadres)
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-2">
+                <label>Telefoonnummer</label>
+            </div>
+            <div class="col-2">
+                @Html.TextBoxFor(model => model.Telefoonnummer)
+                @Html.ValidationMessageFor(model => model.Telefoonnummer)
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-2">
+                <label>Wachtwoord</label>
+            </div>
+            <div class="col-3">
+                @Html.TextBoxFor(model => model.Wachtwoord)
+                @Html.ValidationMessageFor(model => model.Wachtwoord)
+            </div>
+        </div>
+        <br />
+        <div class="row">
+
+            <div class="col-2">
+                <label>Adresgegevens</label>
+            </div>
+            <div class="col-2">
+                @Html.TextBoxFor(model => model.Adresgegevens)
+                @Html.ValidationMessageFor(model => model.Adresgegevens)
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-2">
+                <label>Geslacht</label>
+            </div>
+            <br />
+            <div class="col-2">
+                @Html.DropDownListFor(model => model.Geslacht, new SelectList(Enum.GetValues(typeof(Geslachten))))
+            </div>
+            <br />
+            <button type ="submit">Registreren</button>
+        </div>
+    </div>
+}

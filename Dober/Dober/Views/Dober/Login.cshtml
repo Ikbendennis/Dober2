@@ -1,0 +1,24 @@
+﻿@model Dober.Models.GebruikerModel
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("LoginClick", "Dober", FormMethod.Post))
+{
+    <div class="container" id="Login">
+        <label>Email</label>
+        <br />
+        @Html.TextBoxFor(model => model.Emailadres)
+        @Html.ValidationMessageFor(model => model.Emailadres)
+        <br />
+        <label>Wachtwoord</label>
+        <br />
+        @Html.TextBoxFor(model => model.Wachtwoord)
+        @Html.ValidationMessageFor(model => model.Wachtwoord)
+        <br />
+        <button type="submit">Login</button>
+    </div>
+}
+
+
